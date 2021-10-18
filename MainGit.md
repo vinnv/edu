@@ -1,4 +1,5 @@
 # Основы работы с Git
+# стащил отсюда https://gist.github.com/rdnvndr/cb21a06c5a71fd71213aed1619380b8e
 *По материалам сайта Calculate Linux: https://www.calculate-linux.org/main/ru/git*
 
 - [Введение](#Введение)
