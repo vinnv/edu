@@ -1,7 +1,5 @@
-
 #удалить засраную локальную репу после удаления репы на гитхабе.
 rm -rf .git
-
 #подключаем ssh единожды
 ssh-keygen.exe
 cat /c/Users/vikto/.ssh/id_rsa.pub
@@ -18,19 +16,22 @@ git add .
 git commit -m 'add README.md'
 git branch -M main
 git push -u origin main
-
 #переключиться / создать новую ветку (урок)
 git checkout -b lesson_1
-
 #копирую туда все свои фалы
 #добавляю все новые файлы
 git add .
 #коммичу все новых файлов
 git commit -m 'adding homework lesson 1'
-
 #гружу ветку на гитхаб
 git push -u origin lesson_1
-
 # затем бегу на гит и жму кнопку открыть и создать пул реквест
 
+
+
+# добаляю файлы  в ветку main  без пул реквеста
+git checkout main
+git add git_bash_add_homework.txt
+git commit -m 'add git_bash_add_homework.txt'
+git push -u origin main
 
