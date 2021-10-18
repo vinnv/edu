@@ -1,0 +1,36 @@
+
+#удалить засраную локальную репу после удаления репы на гитхабе.
+rm -rf .git
+
+#подключаем ssh единожды
+ssh-keygen.exe
+cat /c/Users/vikto/.ssh/id_rsa.pub
+#добавляем выведенный текст на github -> settings -> SSH keys -> newssh key
+#переход в локальную папку
+cd ~/YandexDisk/repo/
+# клонирую репу из гита в текущую папки 
+git clone git@github.com:vinnv/edu.git
+# перехожу в папке edu
+cd edu/
+#создаем ридми, добавлеяем, коммитим, создаем ветку main, пушим в неё ридми 
+echo "# edu" >> README.md
+git add .
+git commit -m 'add README.md'
+git branch -M main
+git push -u origin main
+
+#переключиться / создать новую ветку (урок)
+git checkout -b lesson_1
+
+#копирую туда все свои фалы
+#добавляю все новые файлы
+git add .
+#коммичу все новых файлов
+git commit -m 'adding homework lesson 1'
+
+#гружу ветку на гитхаб
+git push -u origin lesson_1
+
+# затем бегу на гит и жму кнопку открыть и создать пул реквест
+
+
